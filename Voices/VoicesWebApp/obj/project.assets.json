@@ -8201,11 +8201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesWebApp\\VoicesWebUI.csproj",
+      "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebUI.csproj",
       "projectName": "VoicesWebUI",
-      "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesWebApp\\VoicesWebUI.csproj",
+      "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebUI.csproj",
       "packagesPath": "C:\\Users\\KB\\.nuget\\packages\\",
-      "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesWebApp\\obj\\",
+      "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8224,11 +8224,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj": {
-              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj"
+            "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj": {
+              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj"
             },
-            "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
-              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj"
+            "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
+              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj"
             }
           }
         }

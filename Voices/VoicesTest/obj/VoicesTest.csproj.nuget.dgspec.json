@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesTest\\VoicesTest.csproj": {}
+    "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesTest\\VoicesTest.csproj": {}
   },
   "projects": {
-    "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesTest\\VoicesTest.csproj": {
+    "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesTest\\VoicesTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesTest\\VoicesTest.csproj",
+        "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesTest\\VoicesTest.csproj",
         "projectName": "VoicesTest",
-        "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesTest\\VoicesTest.csproj",
+        "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesTest\\VoicesTest.csproj",
         "packagesPath": "C:\\Users\\KB\\.nuget\\packages\\",
-        "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesTest\\obj\\",
+        "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

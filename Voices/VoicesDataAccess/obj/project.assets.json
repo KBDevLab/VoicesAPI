@@ -6215,11 +6215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj",
+      "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj",
       "projectName": "VoicesDataAccess",
-      "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj",
+      "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj",
       "packagesPath": "C:\\Users\\KB\\.nuget\\packages\\",
-      "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDataAccess\\obj\\",
+      "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6238,8 +6238,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
-              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj"
+            "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
+              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj"
             }
           }
         }

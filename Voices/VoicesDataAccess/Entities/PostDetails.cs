@@ -10,5 +10,8 @@ namespace VoicesWebUI.Entities
         public int PostId { get; set; }
         public int? Quantity { get; set; }
         public DateTime? PostDate { get; set; }
+
+        public virtual PostData Post { get; set; }
+        public virtual Users User { get; set; }
     }
 }

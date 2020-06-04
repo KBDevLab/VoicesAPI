@@ -10,3 +10,15 @@ X:\Revature\Repos\Voices\VoicesApp\Voices\VoicesDataAccess\obj\Debug\netstandard
 X:\Revature\Repos\Voices\VoicesApp\Voices\VoicesDataAccess\bin\Debug\netstandard2.0\VoicesDomain.dll
 X:\Revature\Repos\Voices\VoicesApp\Voices\VoicesDataAccess\bin\Debug\netstandard2.0\VoicesDomain.pdb
 X:\Revature\Repos\Voices\VoicesApp\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.csproj.CopyComplete
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\bin\Debug\netstandard2.0\VoicesDataAccess.deps.json
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\bin\Debug\netstandard2.0\VoicesDataAccess.dll
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\bin\Debug\netstandard2.0\VoicesDataAccess.pdb
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\bin\Debug\netstandard2.0\VoicesDomain.dll
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\bin\Debug\netstandard2.0\VoicesDomain.pdb
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.csprojAssemblyReference.cache
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.AssemblyInfoInputs.cache
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.AssemblyInfo.cs
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.csproj.CoreCompileInputs.cache
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.csproj.CopyComplete
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.dll
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDataAccess\obj\Debug\netstandard2.0\VoicesDataAccess.pdb

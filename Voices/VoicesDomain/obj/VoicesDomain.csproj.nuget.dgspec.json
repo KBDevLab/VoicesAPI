@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj": {}
+    "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj": {}
   },
   "projects": {
-    "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
+    "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj",
+        "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj",
         "projectName": "VoicesDomain",
-        "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj",
+        "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj",
         "packagesPath": "C:\\Users\\KB\\.nuget\\packages\\",
-        "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\obj\\",
+        "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

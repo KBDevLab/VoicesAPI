@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace VoicesWebUI.Entities
+namespace VoicesDomain.Models
 {
-    public partial class PictureData
+    public class ProfileImage
     {
-        public PictureData()
-        {
-            Users = new HashSet<Users>();
-        }
-
         public int PictureId { get; set; }
         public string ImgName { get; set; }
         public byte[] ImgSource { get; set; }
         public DateTime? ImgDate { get; set; }
-
-        public virtual ICollection<Users> Users { get; set; }
     }
 }

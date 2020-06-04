@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <UserSecretsId>903cb7eb-37c2-4024-a95e-87588f7797c7</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

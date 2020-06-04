@@ -20,14 +20,6 @@ namespace VoicesWebUI.Entities
         public virtual DbSet<PostDetails> PostDetails { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=localhost\\MSSQLSERVER01;Database=Voices;Trusted_Connection=True;");
-            }
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -75,6 +67,18 @@ namespace VoicesWebUI.Entities
                 entity.Property(e => e.PostId).HasColumnName("PostID");
 
                 entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.Post)
+                    .WithMany(p => p.PostDetails)
+                    .HasForeignKey(d => d.PostId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_PostDetails_PostData");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.PostDetails)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_PostDetails_Users");
             });
 
             modelBuilder.Entity<Users>(entity =>
@@ -107,6 +111,16 @@ namespace VoicesWebUI.Entities
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
+
+                entity.HasOne(d => d.PostsNavigation)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.Posts)
+                    .HasConstraintName("FK_Users_PostData");
+
+                entity.HasOne(d => d.ProfilePicNavigation)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.ProfilePic)
+                    .HasConstraintName("FK_Users_PictureData");
             });
 
             OnModelCreatingPartial(modelBuilder);

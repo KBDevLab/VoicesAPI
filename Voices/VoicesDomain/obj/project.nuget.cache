@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "igGmBIh9xtSpfo4I5ULiX2mu/qtZN5VC7uzhrbQViqhMspgHavOow197UrXDPy3QsDDOobS8wvsdtFGtcdUIxw==",
+  "dgSpecHash": "LOcpoAMX935HT+/8eyrudbI9t2/qakJDjqDrcZ/vz6I0gUkMeQDHLdmShqFOeaHrLBeNksbL2AFZKRbNWBorrg==",
   "success": true,
-  "projectFilePath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\Voices\\VoicesDomain\\VoicesDomain.csproj",
+  "projectFilePath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KB\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\KB\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
