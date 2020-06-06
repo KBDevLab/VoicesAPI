@@ -1,14 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using VoicesDataAccess.Interfaces;
 
 namespace DataAccess.Controllers
 {
     public class PostsController : Controller
     {
+        public IPostsRepository _repo { get; }
+
+        public PostsController(IPostsRepository _Repo) =>
+            _Repo = _repo ?? throw new ArgumentException(nameof(_repo));
+
+
         // GET: Posts
         public ActionResult Index()
         {
@@ -22,8 +30,9 @@ namespace DataAccess.Controllers
         }
 
         // GET: Posts/Create
-        public ActionResult Create()
+        public ActionResult Create([FromQuery] int postID)
         {
+
             return View();
         }
 

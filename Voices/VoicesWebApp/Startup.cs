@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DataAccess.Models;
+using Domain.Interfaces;
+using Domain.Repository;
+using VoicesDataAccess.Interfaces;
+using VoicesDataAccess.Repository;
 
 namespace Voices
 {
@@ -29,6 +33,9 @@ namespace Voices
 
             services.AddDbContext<VoicesContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("VoicesContext")));
+
+            services.AddScoped<IUsersRepository, UsersRepository>();
+            services.AddScoped<IPostsRepository, PostsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

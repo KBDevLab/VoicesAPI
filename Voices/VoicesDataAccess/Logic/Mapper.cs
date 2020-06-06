@@ -10,7 +10,7 @@ namespace VoicesDataAccess.Logic
     public class Mapper
     {
         /// <summary>
-        /// Mapping the DataAccess "PostData" to the Domain "PostData"
+        /// Mapping the Data Access "PostData" to the Domain "PostData"
         /// </summary>
         /// <param name="post"></param>
         /// <returns></returns>
@@ -27,7 +27,7 @@ namespace VoicesDataAccess.Logic
         }
 
         /// <summary>
-        /// Mapping the Domain "PostData" to the DataAccess "PostData" 
+        /// Mapping the Domain "PostData" to the Data Access "PostData" 
         /// </summary>
         /// <param name="post"></param>
         /// <returns></returns>
@@ -43,7 +43,11 @@ namespace VoicesDataAccess.Logic
             };
         }
 
-
+        /// <summary>
+        /// Maps the Data Access "User" to the Domain "User"
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public static DataAccess.Models.Users MapUsersDataAccess(Domain.Models.Users user)
         {
             return new DataAccess.Models.Users
@@ -59,6 +63,11 @@ namespace VoicesDataAccess.Logic
             };
         }
 
+        /// <summary>
+        /// Maps the Domain "User" to the Data Access "User"
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public static Domain.Models.Users MapUsersDomain(DataAccess.Models.Users user)
         {
             return new Domain.Models.Users

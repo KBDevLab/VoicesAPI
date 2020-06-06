@@ -2,13 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccess.Models;
+using Domain.Interfaces;
+using Domain.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using VoicesWebUI.ViewModels;
 
 namespace DataAccess.Controllers
 {
     public class UsersController : Controller
     {
+
+        public IUsersRepository _repo { get; }
+
+        public UsersController(IUsersRepository _Repo) =>
+            _repo = _Repo ?? throw new ArgumentException(nameof(_Repo));
+        
         // GET: Users
         public ActionResult Index()
         {
@@ -30,17 +41,30 @@ namespace DataAccess.Controllers
         // POST: Users/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind("fisrtName", "lastName", "Username", "Email", "Password")]UsersViewModel user)
         {
             try
             {
-                // TODO: Add insert logic here
+                if (ModelState.IsValid)
+                {
+                    var User = new Domain.Models.Users
+                    {
+                        FirstName = user.fisrtName,
+                        LastName = user.lastName,
+                        Username = user.Username,
+                        Email = user.Email,
+                        Password = user.Password
+                    };
+                    _repo.AddUser(User);
+                    _repo.Save();
 
-                return RedirectToAction(nameof(Index));
+                    RedirectToAction(nameof(Index));
+                }
+                return View(user);
             }
             catch
             {
-                return View();
+                return View(user);
             }
         }
 

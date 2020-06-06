@@ -292,3 +292,4 @@ X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesWebApp\obj\Debug\netco
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesWebApp\obj\Debug\netcoreapp3.1\VoicesWebUI.dll
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesWebApp\obj\Debug\netcoreapp3.1\VoicesWebUI.pdb
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesWebApp\obj\Debug\netcoreapp3.1\VoicesWebUI.genruntimeconfig.cache
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs

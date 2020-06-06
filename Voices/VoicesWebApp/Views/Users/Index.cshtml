@@ -1,0 +1,60 @@
+﻿@model IEnumerable<VoicesWebUI.ViewModels.UsersViewModel>
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+<div>
+    <h4>Users</h4>
+    <hr />
+
+    <p>
+    <a class="btn" asp-area="" asp-controller="Users" asp-action="Create">Create New Account</a>
+
+
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.fisrtName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.lastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Username)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @* @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fisrtName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.lastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.userID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item">Details</a>
+            </td>
+            </tr>
+            }*@
+        </tbody>
+    </table>
+   </div>
