@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VoicesDomain.Models
+namespace Domain.Models
 {
     public class PostData
     {

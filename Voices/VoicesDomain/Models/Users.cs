@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace VoicesDomain.Models
+namespace Domain.Models
 {
     public class Users
     {
@@ -31,10 +31,9 @@ namespace VoicesDomain.Models
         public string Username { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public double? Rating { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
+        public int? ProfilePic { get; set; }
+        public double? Posts { get; set; }
+
         public List<ProfileImage> ProfilePicture { get; set; } = new List<ProfileImage>();
         public List<PostData> Post { get; set; } = new List<PostData>();
     }

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using VoicesDomain.Interfaces;
-using VoicesWebUI.Entities;
+using Domain.Interfaces;
+using DataAccess.Models;
 
-namespace VoicesDomain.Repository
+namespace Domain.Repository
 {
     public class UsersRepository : IUsersRepository
     {

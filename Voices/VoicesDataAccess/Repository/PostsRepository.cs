@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using VoicesDataAccess.Interfaces;
-using VoicesDomain.Models;
-using VoicesWebUI.Entities;
+using Domain.Models;
+using DataAccess.Models;
 
 namespace VoicesDataAccess.Repository
 {
@@ -17,17 +17,17 @@ namespace VoicesDataAccess.Repository
         {
             this._ctx = context;
         }
-        public void AddPost(VoicesDomain.Models.PostData post)
+        public void AddPost(Domain.Models.PostData post)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<VoicesDomain.Models.PostData> GetAll()
+        public IEnumerable<Domain.Models.PostData> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public VoicesDomain.Models.PostData GetPostByID(int postID)
+        public Domain.Models.PostData GetPostByID(int postID)
         {
             throw new NotImplementedException();
         }
@@ -42,7 +42,7 @@ namespace VoicesDataAccess.Repository
             throw new NotImplementedException();
         }
 
-        public void UpdatePost(VoicesDomain.Models.PostData post)
+        public void UpdatePost(Domain.Models.PostData post)
         {
             throw new NotImplementedException();
         }

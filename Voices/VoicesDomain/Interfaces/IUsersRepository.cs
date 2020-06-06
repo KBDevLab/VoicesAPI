@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using VoicesDomain.Models;
+using Domain.Models;
 
-namespace VoicesDomain.Interfaces
+namespace Domain.Interfaces
 {
     public interface IUsersRepository
     {

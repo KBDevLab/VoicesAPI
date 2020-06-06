@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace VoicesWebUI.Entities
+namespace DataAccess.Models
 {
     public partial class Users
     {
@@ -9,12 +10,14 @@ namespace VoicesWebUI.Entities
         {
             PostDetails = new HashSet<PostDetails>();
         }
-
+        [Key]
         public int UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Username { get; set; }
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         public int? ProfilePic { get; set; }
         public int? Posts { get; set; }

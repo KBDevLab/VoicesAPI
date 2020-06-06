@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace VoicesWebUI.Entities
+namespace DataAccess.Models
 {
     public partial class VoicesContext : DbContext
     {
