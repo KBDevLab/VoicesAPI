@@ -23,7 +23,7 @@ namespace DataAccess.Controllers
         // GET: Users
         public ActionResult Index()
         {
-            return View();
+            return View(_repo.GetAll().ToString());
         }
 
         // GET: Users/Details/5
@@ -41,21 +41,21 @@ namespace DataAccess.Controllers
         // POST: Users/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind("fisrtName", "lastName", "Username", "Email", "Password")]UsersViewModel user)
+        public ActionResult Create([Bind("FisrtName", "LastName", "Username", "Email", "Password")]UsersViewModel user)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var User = new Domain.Models.Users
+                    var users = new Domain.Models.Users
                     {
-                        FirstName = user.fisrtName,
-                        LastName = user.lastName,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
                         Username = user.Username,
                         Email = user.Email,
                         Password = user.Password
                     };
-                    _repo.AddUser(User);
+                    _repo.AddUser(users);
                     _repo.Save();
 
                     RedirectToAction(nameof(Index));

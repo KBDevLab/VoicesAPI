@@ -5,7 +5,7 @@ using Domain.Models;
 
 namespace VoicesDataAccess.Interfaces
 {
-    public interface IPostsRepository
+    public interface IPostsRepository : IDisposable
     {
         IEnumerable<PostData> GetAll();
         PostData GetPostByID(int postID);

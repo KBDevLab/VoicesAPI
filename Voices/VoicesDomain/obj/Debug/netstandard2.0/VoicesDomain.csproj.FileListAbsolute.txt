@@ -15,3 +15,4 @@ X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netst
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.csproj.CoreCompileInputs.cache
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.dll
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.pdb
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.csprojAssemblyReference.cache

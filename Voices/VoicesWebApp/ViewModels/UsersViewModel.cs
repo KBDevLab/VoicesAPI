@@ -11,11 +11,11 @@ namespace VoicesWebUI.ViewModels
 {
     public class UsersViewModel
     {
-        public int userID { get; set; }
+        public int UserId { get; set; }
         [Display(Name = "First Name")]
-        public string fisrtName { get; set; }
+        public string FirstName { get; set; }
         [Display(Name = "Last Name")]
-        public string lastName { get; set; }
+        public string LastName { get; set; }
         public string Username { get; set; }
         [Display(Name = "E-Mail")]
         public string Email { get; set; }

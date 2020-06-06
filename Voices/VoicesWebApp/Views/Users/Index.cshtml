@@ -4,14 +4,13 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>Register</h1>
+<h1>Users</h1>
 
 <div>
-    <h4>Users</h4>
     <hr />
 
     <p>
-    <a class="btn" asp-area="" asp-controller="Users" asp-action="Create">Create New Account</a>
+    <button class="btn-dark" asp-area="" asp-controller="Users" asp-action="Create">Register</button>
 
 
     </p>
@@ -19,10 +18,10 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.fisrtName)
+                    @Html.DisplayNameFor(model => model.FirstName)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.lastName)
+                    @Html.DisplayNameFor(model => model.LastName)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Username)
