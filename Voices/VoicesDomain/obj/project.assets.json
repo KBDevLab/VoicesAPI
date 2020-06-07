@@ -1716,6 +1716,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "VoicesDataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4"
+        },
+        "compile": {
+          "bin/placeholder/VoicesDataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VoicesDataAccess.dll": {}
+        }
       }
     }
   },
@@ -6179,6 +6192,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "VoicesDataAccess/1.0.0": {
+      "type": "project",
+      "path": "../VoicesDataAccess/VoicesDataAccess.csproj",
+      "msbuildProject": "../VoicesDataAccess/VoicesDataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6186,7 +6204,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "VoicesDataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6218,7 +6237,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj": {
+              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

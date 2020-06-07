@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace VoicesTest
+﻿namespace VoicesTest
 {
     public class Class1
     {

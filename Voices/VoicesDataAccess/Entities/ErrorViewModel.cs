@@ -1,5 +1,3 @@
-using System;
-
 namespace Voices.Models
 {
     public class ErrorViewModel

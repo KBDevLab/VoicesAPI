@@ -1,11 +1,4 @@
-﻿using DataAccess.Models;
-using Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace VoicesWebUI.ViewModels
 {

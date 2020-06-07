@@ -1,7 +1,6 @@
-﻿using System;
+﻿using DataAccess.Models;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using Domain.Models;
 
 namespace VoicesDataAccess.Interfaces
 {

@@ -29,11 +29,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {
-              "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
-                "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -107,7 +103,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj": {
+                "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDataAccess\\VoicesDataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -207,6 +207,10 @@
               "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[3.1.4, )"
             },

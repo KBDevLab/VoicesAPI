@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Domain.Interfaces;
-using DataAccess.Models;
+﻿using DataAccess.Models;
 using Microsoft.Extensions.Logging;
-using VoicesDataAccess.Logic;
+using System;
+using System.Collections.Generic;
+using VoicesDataAccess.Interfaces;
 
-namespace Domain.Repository
+namespace VoicesDataAccess.Repository
 {
     public class UsersRepository : IUsersRepository
     {
@@ -18,18 +16,9 @@ namespace Domain.Repository
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        public void AddUser(Models.Users user)
+        public void AddUser(Users user)
         {
-            if (user.UserId != 0)
-            {
-                _logger.LogWarning("Users to be added has an ID ({UserId}) already: ignoring.", user.UserId);
-            }
-
-            _logger.LogInformation("Adding User");
-
-            Users entity = Mapper.MapUsersDataAccess(user);
-            entity.UserId = 0;
-            _ctx.Add(entity);
+            throw new NotImplementedException();
         }
 
         public void DeleteUser(int userID)
@@ -37,23 +26,22 @@ namespace Domain.Repository
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Models.Users> GetAll()
+        public IEnumerable<Users> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Models.Users GetUserByID(int userID)
+        public Users GetUserByID(int userID)
         {
             throw new NotImplementedException();
         }
 
         public void Save()
         {
-            _logger.LogInformation("Saving changes to the database");
-            _ctx.SaveChanges();
+            throw new NotImplementedException();
         }
 
-        public void UpdateUser(Models.Users user)
+        public void UpdateUser(Users user)
         {
             throw new NotImplementedException();
         }
@@ -93,5 +81,7 @@ namespace Domain.Repository
             // GC.SuppressFinalize(this);
         }
         #endregion
+
+
     }
 }

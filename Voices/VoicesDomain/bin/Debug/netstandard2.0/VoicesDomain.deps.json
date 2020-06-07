@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore.Design": "3.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.4",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "VoicesDataAccess": "1.0.0"
         },
         "runtime": {
           "VoicesDomain.dll": {}
@@ -1258,6 +1259,14 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "VoicesDataAccess/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4"
+        },
+        "runtime": {
+          "VoicesDataAccess.dll": {}
+        }
       }
     }
   },
@@ -2064,6 +2073,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "VoicesDataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

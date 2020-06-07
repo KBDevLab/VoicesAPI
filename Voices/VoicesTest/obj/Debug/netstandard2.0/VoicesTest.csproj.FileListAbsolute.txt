@@ -14,3 +14,4 @@ X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesTest\obj\Debug\netstan
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesTest\obj\Debug\netstandard2.0\VoicesTest.csproj.CoreCompileInputs.cache
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesTest\obj\Debug\netstandard2.0\VoicesTest.dll
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesTest\obj\Debug\netstandard2.0\VoicesTest.pdb
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesTest\obj\Debug\netstandard2.0\VoicesTest.csprojAssemblyReference.cache

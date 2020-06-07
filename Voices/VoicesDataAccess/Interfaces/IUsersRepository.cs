@@ -1,9 +1,8 @@
-﻿using System;
+﻿using DataAccess.Models;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using Domain.Models;
 
-namespace Domain.Interfaces
+namespace VoicesDataAccess.Interfaces
 {
     public interface IUsersRepository : IDisposable
     {

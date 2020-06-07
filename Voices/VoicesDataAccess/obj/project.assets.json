@@ -1716,19 +1716,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "VoicesDomain/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4"
-        },
-        "compile": {
-          "bin/placeholder/VoicesDomain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/VoicesDomain.dll": {}
-        }
       }
     }
   },
@@ -6192,11 +6179,6 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "VoicesDomain/1.0.0": {
-      "type": "project",
-      "path": "../VoicesDomain/VoicesDomain.csproj",
-      "msbuildProject": "../VoicesDomain/VoicesDomain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6204,8 +6186,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
-      "NETStandard.Library >= 2.0.3",
-      "VoicesDomain >= 1.0.0"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -6237,11 +6218,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj": {
-              "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesDomain\\VoicesDomain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,117 +1,168 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DataAccess.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using DataAccess.Models;
-using Domain.Interfaces;
-using Domain.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using VoicesWebUI.ViewModels;
 
-namespace DataAccess.Controllers
+namespace VoicesWebUI.Controllers
 {
     public class UsersController : Controller
     {
+        private readonly VoicesContext _context;
 
-        public IUsersRepository _repo { get; }
-
-        public UsersController(IUsersRepository _Repo) =>
-            _repo = _Repo ?? throw new ArgumentException(nameof(_Repo));
-        
-        // GET: Users
-        public ActionResult Index()
+        public UsersController(VoicesContext context)
         {
-            return View(_repo.GetAll().ToString());
+            _context = context;
+        }
+
+        // GET: Users
+        public async Task<IActionResult> Index()
+        {
+            var voicesContext = _context.Users.Include(u => u.PostsNavigation).Include(u => u.ProfilePicNavigation);
+            return View(await voicesContext.ToListAsync());
         }
 
         // GET: Users/Details/5
-        public ActionResult Details(int id)
+        public async Task<IActionResult> Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var users = await _context.Users
+                .Include(u => u.PostsNavigation)
+                .Include(u => u.ProfilePicNavigation)
+                .FirstOrDefaultAsync(m => m.UserId == id);
+            if (users == null)
+            {
+                return NotFound();
+            }
+
+            return View(users);
         }
 
         // GET: Users/Create
-        public ActionResult Create()
+        public IActionResult Create()
         {
+            ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId");
+            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId");
             return View();
         }
 
         // POST: Users/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind("FisrtName", "LastName", "Username", "Email", "Password")]UsersViewModel user)
+        public async Task<IActionResult> Create([Bind("UserId,FirstName,LastName,Username,Email,Password,ProfilePic,Posts")] Users users)
         {
-            try
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    var users = new Domain.Models.Users
-                    {
-                        FirstName = user.FirstName,
-                        LastName = user.LastName,
-                        Username = user.Username,
-                        Email = user.Email,
-                        Password = user.Password
-                    };
-                    _repo.AddUser(users);
-                    _repo.Save();
-
-                    RedirectToAction(nameof(Index));
-                }
-                return View(user);
+                _context.Add(users);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View(user);
-            }
+            ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId", users.Posts);
+            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId", users.ProfilePic);
+            return View(users);
         }
 
         // GET: Users/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var users = await _context.Users.FindAsync(id);
+            if (users == null)
+            {
+                return NotFound();
+            }
+            ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId", users.Posts);
+            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId", users.ProfilePic);
+            return View(users);
         }
 
         // POST: Users/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(int id, [Bind("UserId,FirstName,LastName,Username,Email,Password,ProfilePic,Posts")] Users users)
         {
-            try
+            if (id != users.UserId)
             {
-                // TODO: Add update logic here
+                return NotFound();
+            }
 
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(users);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UsersExists(users.UserId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId", users.Posts);
+            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId", users.ProfilePic);
+            return View(users);
         }
 
         // GET: Users/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var users = await _context.Users
+                .Include(u => u.PostsNavigation)
+                .Include(u => u.ProfilePicNavigation)
+                .FirstOrDefaultAsync(m => m.UserId == id);
+            if (users == null)
+            {
+                return NotFound();
+            }
+
+            return View(users);
         }
 
         // POST: Users/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
+            var users = await _context.Users.FindAsync(id);
+            _context.Users.Remove(users);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+        private bool UsersExists(int id)
+        {
+            return _context.Users.Any(e => e.UserId == id);
+        }
+
+        public IActionResult Login()
+        {
+            return View();
         }
     }
 }

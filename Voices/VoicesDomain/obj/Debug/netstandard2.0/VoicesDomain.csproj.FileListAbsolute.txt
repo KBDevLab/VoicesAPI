@@ -16,3 +16,6 @@ X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netst
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.dll
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.pdb
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.csprojAssemblyReference.cache
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\bin\Debug\netstandard2.0\VoicesDataAccess.dll
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\bin\Debug\netstandard2.0\VoicesDataAccess.pdb
+X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.csproj.CopyComplete
