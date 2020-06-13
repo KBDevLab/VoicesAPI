@@ -8548,9 +8548,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebUI.csproj",
-      "projectName": "VoicesWebUI",
-      "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebUI.csproj",
+      "projectUniqueName": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebApp.csproj",
+      "projectName": "VoicesWebApp",
+      "projectPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebApp.csproj",
       "packagesPath": "C:\\Users\\KB\\.nuget\\packages\\",
       "outputPath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\obj\\",
       "projectStyle": "PackageReference",

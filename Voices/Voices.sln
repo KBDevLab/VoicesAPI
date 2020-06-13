@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoicesDataAccess", "VoicesD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoicesTest", "VoicesTest\VoicesTest.csproj", "{CCE7FA68-5985-4F02-83AA-ABDDA0834966}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoicesWebUI", "VoicesWebApp\VoicesWebUI.csproj", "{62D994D6-AD94-4322-A010-1EA95A655553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoicesWebApp", "VoicesWebApp\VoicesWebApp.csproj", "{3F62D7B0-9BCA-41F2-8FAE-9C4CB0949255}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{CCE7FA68-5985-4F02-83AA-ABDDA0834966}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCE7FA68-5985-4F02-83AA-ABDDA0834966}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCE7FA68-5985-4F02-83AA-ABDDA0834966}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62D994D6-AD94-4322-A010-1EA95A655553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62D994D6-AD94-4322-A010-1EA95A655553}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62D994D6-AD94-4322-A010-1EA95A655553}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62D994D6-AD94-4322-A010-1EA95A655553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F62D7B0-9BCA-41F2-8FAE-9C4CB0949255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F62D7B0-9BCA-41F2-8FAE-9C4CB0949255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F62D7B0-9BCA-41F2-8FAE-9C4CB0949255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F62D7B0-9BCA-41F2-8FAE-9C4CB0949255}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

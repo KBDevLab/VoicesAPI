@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OrH1PDiND/VrKCyKdVeOUHPH6MqZ+1WcW4RdMKJf90v25/QpVnpLeKvoqW2e76W+8UfJgr90f2/7e6JfXMYLeg==",
+  "dgSpecHash": "u5xWnIaHPH2McWqGoK3K88ewWKeWSJK5Lp81JO7Q9lHKcou3JUcCwrp9rq1d14YWL4Lg0Pin5lse36/KEYIOAA==",
   "success": true,
-  "projectFilePath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebUI.csproj",
+  "projectFilePath": "X:\\Revature\\Repos\\Voices\\VoicesApp\\VoicesMVC\\Voices\\VoicesWebApp\\VoicesWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
