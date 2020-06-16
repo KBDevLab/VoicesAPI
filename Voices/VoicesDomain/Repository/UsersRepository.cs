@@ -18,7 +18,7 @@ namespace VoicesDataAccess.Repository
 
         public void AddUser(Users user)
         {
-            throw new NotImplementedException();
+            _ctx.Add(user);
         }
 
         public void DeleteUser(int userID)

@@ -4,50 +4,70 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Users</h4>
+    <br />
+    <br />
+<h1 style="color: white">New Account</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+    <div class="main-login main-center">
+        <form asp-action="Create" class="form-horizontal" style="text-align: center; color: rgb(0, 0, 0);" autocomplete="on">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+                <label style="color: black" asp-for="FirstName" class="cols-sm-2 control-label"></label>
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group">
+                            <i class="glyphicon glyphicon-user"
+                               aria-hidden="true"></i>
+                        </span>
+                        <input asp-for="FirstName" class="form-control" required />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
+
             <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
+                <label style="color: black" asp-for="LastName" class="cols-sm-2 control-label"></label>
+                <input asp-for="LastName" class="form-control" required />
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Username" class="control-label"></label>
-                <input asp-for="Username" class="form-control" />
+                <label style="color: black" asp-for="Username" class="cols-sm-2 control-label"></label>
+                <input asp-for="Username" class="form-control" required />
                 <span asp-validation-for="Username" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
+                <label style="color: black" asp-for="Email" class="cols-sm-2 control-label"></label>
+                <input asp-for="Email" class="form-control" required />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
+                <label style="color: black" asp-for="Password" class="cols-sm-2 control-label"></label>
+                <input asp-for="Password" class="form-control" required />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Submit" class="btn btn-primary" />
+                <button type="submit" class="btn btn-dark">Register</button> 
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<style>
+    body {
+        background-image: url("https://images.unsplash.com/photo-1557089041-7fa93ffc2e08?ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
