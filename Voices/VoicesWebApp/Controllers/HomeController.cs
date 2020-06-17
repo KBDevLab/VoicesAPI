@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using Voices.Models;
@@ -23,7 +24,15 @@ namespace Voices.Controllers
         {
             return View();
         }
+
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
         {
             return View();
         }
