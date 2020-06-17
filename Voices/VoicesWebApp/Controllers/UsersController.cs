@@ -1,17 +1,19 @@
-﻿using DataAccess.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Threading.Tasks;
+using DataAccess.Models;
 
-namespace VoicesWebUI.Controllers
+namespace VoicesWebApp.Controllers
 {
     public class UsersController : Controller
     {
-        private readonly VoicesContext _context;
+        private readonly voicesContext _context;
 
-        public UsersController(VoicesContext context)
+        public UsersController(voicesContext context)
         {
             _context = context;
         }
@@ -19,7 +21,7 @@ namespace VoicesWebUI.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {
-            var voicesContext = _context.Users.Include(u => u.PostsNavigation).Include(u => u.ProfilePicNavigation);
+            var voicesContext = _context.Users.Include(u => u.PostsNavigation);
             return View(await voicesContext.ToListAsync());
         }
 
@@ -33,7 +35,6 @@ namespace VoicesWebUI.Controllers
 
             var users = await _context.Users
                 .Include(u => u.PostsNavigation)
-                .Include(u => u.ProfilePicNavigation)
                 .FirstOrDefaultAsync(m => m.UserId == id);
             if (users == null)
             {
@@ -47,7 +48,6 @@ namespace VoicesWebUI.Controllers
         public IActionResult Create()
         {
             ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId");
-            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId");
             return View();
         }
 
@@ -65,7 +65,6 @@ namespace VoicesWebUI.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId", users.Posts);
-            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId", users.ProfilePic);
             return View(users);
         }
 
@@ -83,7 +82,6 @@ namespace VoicesWebUI.Controllers
                 return NotFound();
             }
             ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId", users.Posts);
-            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId", users.ProfilePic);
             return View(users);
         }
 
@@ -120,7 +118,6 @@ namespace VoicesWebUI.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["Posts"] = new SelectList(_context.PostData, "PostId", "PostId", users.Posts);
-            ViewData["ProfilePic"] = new SelectList(_context.PictureData, "PictureId", "PictureId", users.ProfilePic);
             return View(users);
         }
 
@@ -134,7 +131,6 @@ namespace VoicesWebUI.Controllers
 
             var users = await _context.Users
                 .Include(u => u.PostsNavigation)
-                .Include(u => u.ProfilePicNavigation)
                 .FirstOrDefaultAsync(m => m.UserId == id);
             if (users == null)
             {
@@ -158,11 +154,6 @@ namespace VoicesWebUI.Controllers
         private bool UsersExists(int id)
         {
             return _context.Users.Any(e => e.UserId == id);
-        }
-
-        public IActionResult Login()
-        {
-            return View();
         }
     }
 }

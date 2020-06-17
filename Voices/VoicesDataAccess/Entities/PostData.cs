@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DataAccess.Models
 {
@@ -11,10 +11,8 @@ namespace DataAccess.Models
             Users = new HashSet<Users>();
         }
 
-        [Key]
         public int PostId { get; set; }
         public string Title { get; set; }
-        [DataType(DataType.Upload)]
         public byte[] Media { get; set; }
         public string Comment { get; set; }
         public double? Rating { get; set; }

@@ -24,7 +24,7 @@ namespace Voices
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<VoicesContext>(options =>
+            services.AddDbContext<voicesContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("VoicesContext")));
 
             services.AddScoped<IUsersRepository, UsersRepository>();

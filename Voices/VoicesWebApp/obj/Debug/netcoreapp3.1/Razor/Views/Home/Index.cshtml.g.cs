@@ -21,13 +21,13 @@ using Voices;
 #nullable disable
 #nullable restore
 #line 2 "X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesWebApp\Views\_ViewImports.cshtml"
-using Voices.Models;
+using VoicesWebApp.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e8f94310f7254f4acf36a5972428fd72b7430895", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d4b08f9e9da12626df91aa9430cccb0297a4457c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1df2657ac834e8f4635a34471ad1f8001fbf112c", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

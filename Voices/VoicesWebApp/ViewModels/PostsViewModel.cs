@@ -1,4 +1,4 @@
-﻿namespace VoicesWebUI.ViewModels
+﻿namespace VoicesWebApp.ViewModels
 {
     public class PostsViewModel
     {

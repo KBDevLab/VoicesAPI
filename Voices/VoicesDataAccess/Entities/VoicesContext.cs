@@ -1,19 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DataAccess.Models
 {
-    public partial class VoicesContext : DbContext
+    public partial class voicesContext : DbContext
     {
-        public VoicesContext()
+        public voicesContext()
         {
         }
 
-        public VoicesContext(DbContextOptions<VoicesContext> options)
+        public voicesContext(DbContextOptions<voicesContext> options)
             : base(options)
         {
         }
 
-        public virtual DbSet<PictureData> PictureData { get; set; }
         public virtual DbSet<PostData> PostData { get; set; }
         public virtual DbSet<PostDetails> PostDetails { get; set; }
         public virtual DbSet<Users> Users { get; set; }
@@ -21,24 +22,6 @@ namespace DataAccess.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<PictureData>(entity =>
-            {
-                entity.HasKey(e => e.PictureId);
-
-                entity.Property(e => e.PictureId).HasColumnName("PictureID");
-
-                entity.Property(e => e.ImgDate)
-                    .HasColumnName("imgDate")
-                    .HasColumnType("date");
-
-                entity.Property(e => e.ImgName)
-                    .HasColumnName("imgName")
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.ImgSource).HasColumnName("imgSource");
-            });
-
             modelBuilder.Entity<PostData>(entity =>
             {
                 entity.HasKey(e => e.PostId);
@@ -114,11 +97,6 @@ namespace DataAccess.Models
                     .WithMany(p => p.Users)
                     .HasForeignKey(d => d.Posts)
                     .HasConstraintName("FK_Users_PostData");
-
-                entity.HasOne(d => d.ProfilePicNavigation)
-                    .WithMany(p => p.Users)
-                    .HasForeignKey(d => d.ProfilePic)
-                    .HasConstraintName("FK_Users_PictureData");
             });
 
             OnModelCreatingPartial(modelBuilder);

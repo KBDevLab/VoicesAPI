@@ -8,9 +8,9 @@ namespace VoicesDataAccess.Repository
 {
     public class PostsRepository : IPostsRepository
     {
-        private readonly VoicesContext _ctx;
+        private readonly voicesContext _ctx;
         private readonly ILogger<PostsRepository> _logger;
-        public PostsRepository(VoicesContext context)
+        public PostsRepository(voicesContext context)
         {
             this._ctx = context;
         }

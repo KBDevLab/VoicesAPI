@@ -2,7 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
-using Voices.Models;
+using Voices.Controllers;
+using VoicesWebApp.ViewModels;
 
 namespace Voices.Controllers
 {

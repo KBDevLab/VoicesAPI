@@ -8,9 +8,9 @@ namespace VoicesDataAccess.Repository
 {
     public class UsersRepository : IUsersRepository
     {
-        private readonly VoicesContext _ctx;
-        private readonly ILogger<VoicesContext> _logger;
-        public UsersRepository(VoicesContext context, ILogger<VoicesContext> logger)
+        private readonly voicesContext _ctx;
+        private readonly ILogger<voicesContext> _logger;
+        public UsersRepository(voicesContext context, ILogger<voicesContext> logger)
         {
             _ctx = context ?? throw new ArgumentNullException(nameof(context));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));

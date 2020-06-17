@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace VoicesWebUI.ViewModels
+namespace VoicesWebApp.ViewModels
 {
     public class UsersViewModel
     {
@@ -33,6 +33,8 @@ namespace VoicesWebUI.ViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
+        [DataType(DataType.ImageUrl)]
+        public byte[] ProfilePic { get; set; }
 
     }
 }
