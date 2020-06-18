@@ -9,7 +9,6 @@ X:\Revature\Repos\Voices\VoicesApp\Voices\VoicesDomain\obj\Debug\netstandard2.0\
 X:\Revature\Repos\Voices\VoicesApp\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.csproj.CoreCompileInputs.cache
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.AssemblyInfoInputs.cache
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.AssemblyInfo.cs
-X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.csproj.CoreCompileInputs.cache
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\obj\Debug\netstandard2.0\VoicesDomain.csprojAssemblyReference.cache
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\bin\Debug\netstandard2.0\VoicesDomain.deps.json
 X:\Revature\Repos\Voices\VoicesApp\VoicesMVC\Voices\VoicesDomain\bin\Debug\netstandard2.0\VoicesDomain.dll

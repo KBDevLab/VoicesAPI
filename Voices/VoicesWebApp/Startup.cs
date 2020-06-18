@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 using VoicesDataAccess.Interfaces;
 using VoicesDataAccess.Repository;
 
@@ -29,6 +30,8 @@ namespace Voices
 
             services.AddScoped<IUsersRepository, UsersRepository>();
             services.AddScoped<IPostsRepository, PostsRepository>();
+
+            services.AddSession(options => options.IdleTimeout = TimeSpan.FromSeconds(3600));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +51,8 @@ namespace Voices
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 

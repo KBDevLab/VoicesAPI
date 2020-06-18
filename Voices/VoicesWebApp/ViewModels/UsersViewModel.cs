@@ -24,7 +24,7 @@ namespace VoicesWebApp.ViewModels
         [MaxLength(20, ErrorMessage = "Username too long")]
         public string Username { get; set; }
         [Required]
-        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
         [Display(Name = "E-Mail")]
         public string Email { get; set; }
         [Required]
